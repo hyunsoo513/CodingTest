@@ -26,6 +26,8 @@ public class test01transform {
 		System.out.println("String.valueOf(i): " + s1);
 		String s2 = Integer.toString(i);
 		System.out.println("Integer.toString(i): " + s2);
+		// float ff = 1.23 으로 작성할 경우 error가 발생하여 컴파일이 안되기 때문에 1.23 뒤에 f 를 작성해주어 명시해주었다.
+		// 'Type mismatch: cannot convert from double to float'
 		float ff = 1.23f;
 		double dd = 1.23;
 		String s3 = String.valueOf(ff);
