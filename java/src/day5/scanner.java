@@ -20,5 +20,14 @@ public class scanner {
 		System.out.println("입력된 숫자2: " + num2);
 		System.out.println("입력된 숫자3: " + num3);
 		
+		sc.close();
+		
+		String test = "1 bun 2 bun three bun 넷 bun";
+		Scanner sc2 = new Scanner(test).useDelimiter("\\s*bun\\s*");
+		System.out.println(sc2.nextInt());
+		System.out.println(sc2.nextInt());
+		System.out.println(sc2.next());
+		System.out.println(sc2.next());
+		sc2.close();
 	}
 }
